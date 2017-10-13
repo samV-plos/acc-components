@@ -1,0 +1,29 @@
+.acc-form-question__repeatable {
+  margin-bottom:20px;}
+  
+.acc-panel {
+  padding:10px;
+  background:#f5f5f5;
+  border-left:10px solid #f5f5f5;}
+
+.acc-panel:hover {
+  background:#eeeeee;
+  border-left:10px solid #39a329;
+  cursor: move;}
+
+.acc-panel-header .delete {
+  color:#878787;
+  border:0;
+  background:transparent;}
+
+.acc-panel-header .delete:hover,
+.acc-panel-header .delete:focus {
+  color:#39a329;}
+
+.acc-button-link {
+  color:#39a329}
+  
+.acc-button-link:hover {
+  color:#39a329;
+  font-style:underline;
+  line-height:20px;}
