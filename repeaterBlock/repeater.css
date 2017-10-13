@@ -11,13 +11,13 @@
   border-left:10px solid #39a329;
   cursor: move;}
 
-.acc-panel-header .delete {
+.acc-panel__header .delete {
   color:#878787;
   border:0;
   background:transparent;}
 
-.acc-panel-header .delete:hover,
-.acc-panel-header .delete:focus {
+.acc-panel__header .delete:hover,
+.acc-panel__header .delete:focus {
   color:#39a329;}
 
 .acc-button-link {
