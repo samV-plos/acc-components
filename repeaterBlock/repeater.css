@@ -22,6 +22,9 @@
 
 .acc-button-link {
   color:#39a329}
+
+.acc-button-link .acc-is-disabled {
+  color:#878787; }
   
 .acc-button-link:hover {
   color:#39a329;
