@@ -3,30 +3,30 @@
   
 .acc-panel {
   padding:10px;
-  background:#f5f5f5;
-  border-left:10px solid #f5f5f5;}
+  background:$aperta-grey-xlight;
+  border-left:10px solid $aperta-grey-xlight;}
 
 .acc-panel:hover {
-  background:#eeeeee;
-  border-left:10px solid #39a329;
+  background:$aperta-grey-lighter;
+  border-left:10px solid $aperta-green;
   cursor: move;}
 
 .acc-panel__header .delete {
-  color:#878787;
+  color:$aperta-grey;
   border:0;
   background:transparent;}
 
 .acc-panel__header .delete:hover,
 .acc-panel__header .delete:focus {
-  color:#39a329;}
+  color:$aperta-green;}
 
 .acc-button-link {
-  color:#39a329}
+  color:$aperta-green;}
 
 .acc-button-link .acc-is-disabled {
-  color:#878787; }
+  color:$aperta-grey; }
   
 .acc-button-link:hover {
-  color:#39a329;
+  color:$aperta-green;
   font-style:underline;
   line-height:20px;}
