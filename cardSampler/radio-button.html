@@ -1,21 +1,24 @@
-This is a radio button question. <b>Please</b> pick a choice
-
-<label for="ember2071">
-    Radio-Button Label
-    <fieldset id="ember2080" class="ember-view card-content card-content-radio">
-        <div>
-            <label class="option" for="ember2080-0">
-                <input id="ember2071" type="radio" value="1" aria-required="false" class="ember-view">
-                <span class="card-content-radio-label">Choice 1</span>
-            </label>
-            <label class="option" for="ember2080-1">
-                <input id="ember2071" type="radio" value="2" aria-required="false" class="ember-view">
-                <span class="card-content-radio-label">Choice 2</span>
-            </label>
-        </div>
-        <div>
-            
-        </div>
-        
-    </fieldset>
-</label>
+<fieldset class="acc-form-element">
+	<legend class="acc-form-element__legend acc-form-element__label">
+		Radio Group Legend
+	</legend>
+	<div class="acc-form-text">
+		<p>This is a radio button question. <b>Please</b> pick a choice</p>
+	</div>
+	<div class="acc-form-element__control">
+		<span class="acc-radio">
+			<label class="acc-form-element__label" for="radio-1">
+				<input type="radio" 
+					id="radio-1" 
+					name="options" /> Yes
+			</label>
+		</span>
+		<span class="acc-radio">
+			<label class="acc-form-element__label" for="radio-2">
+				<input type="radio" 
+					id="radio-2" 
+					name="options" /> No
+			</label>
+		</span>
+	</div>
+</fieldset>

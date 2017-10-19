@@ -1,35 +1,24 @@
-This is a check box
-
-<label for="ember2049">
-    Check this box if you agree
-    <div id="ember2058" class="ember-view card-content card-content-check-box">
-        <p class="content-text">
-            This is a check box
-            
-        </p>
-        
-        <div class="checkbox">
-            <input id="ember2049" type="checkbox" name="ember2049" aria-required="false" class="ember-view ember-checkbox">
-        </div>
-        <div>
-            
-        </div>
-        
-    </div>
-</label>
-
-
-<label for="ember2068">
-    Check this box if you disagree instead
-    <div id="ember2069" class="ember-view card-content card-content-check-box">
-        
-        
-        <div class="checkbox">
-            <input id="ember2068" type="checkbox" name="ember2068" aria-required="false" class="ember-view ember-checkbox">
-        </div>
-        <div>
-            
-        </div>
-        
-    </div>
-</label>
+<fieldset class="acc-form-element">
+	<legend class="acc-form-element__legend acc-form-element__label">
+		This is a check box
+	</legend>
+	<div class="acc-form-text">
+		<p>This is a checkbox question. <b>Please</b> pick a choice</p>
+	</div>
+	<div class="acc-form-element__control">
+		<span class="acc-check">
+			<label class="acc-form-element__label" for="check-1">
+				<input type="radio" 
+					id="check-1" 
+					name="options" />  Check this box if you agree
+			</label>
+		</span>
+		<span class="acc-check">
+			<label class="acc-form-element__label" for="check-2">
+				<input type="radio" 
+					id="check-2" 
+					name="options" /> Check this box if you disagree instead
+			</label>
+		</span>
+	</div>
+</fieldset>
