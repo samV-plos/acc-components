@@ -1,21 +1,22 @@
-<div class="acc-form-text">
+<div class="form-text">
 	<p>This is a block of instructional text. It is not a question, and requires no answer.</p>
     <p>This is a block of instructional text. It is not a question, and requires no answer.</p>
 </div>
 
-<div class="acc-form-element">
-	<label class="acc-form-element__label" for="text-1">
+<label class="form-element">
+	<span class="form-element__label">
 		This is the text of a custom question. Agree?
-	</label>
-	<div class="acc-form-element__control">
-		<input type="text" id="text-1" class="acc-input">
+	</span>
+	<div class="form-element__control">
+		<input type="text" class="form-element__input">
 	</div>
-</div>
-<div class="acc-form-element">
-	<label class="acc-form-element__label" for="text-2">
-		This is a second question
-	</label>
-	<div class="acc-form-element__control">
-		<input type="text" id="text-2" class="acc-input">
+</label>
+<label class="form-element">
+	<span class="form-element__label">
+		This is the text of a required question. 
+		<span class="required-field"><i class="fa fa-asterisk"></i></span>
+	</span>
+	<div class="form-element__control">
+		<input type="text" class="form-element__input">
 	</div>
-</div>
+</label>
