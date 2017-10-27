@@ -1,24 +1,25 @@
-<fieldset class="acc-form-element">
-	<legend class="acc-form-element__legend acc-form-element__label">
+<fieldset class="card-form-element">
+	<legend class="card-form-element__legend card-form-element__label">
 		This is a check box
 	</legend>
-	<div class="acc-form-text">
+	<div class="card-form-text">
 		<p>This is a checkbox question. <b>Please</b> pick a choice</p>
 	</div>
-	<div class="acc-form-element__control">
-		<span class="acc-check">
-			<label class="acc-form-element__label" for="check-1">
-				<input type="radio" 
-					id="check-1" 
-					name="options" />  Check this box if you agree
-			</label>
-		</span>
-		<span class="acc-check">
-			<label class="acc-form-element__label" for="check-2">
-				<input type="radio" 
-					id="check-2" 
-					name="options" /> Check this box if you disagree instead
-			</label>
-		</span>
+	<div class="card-check">
+		<label class="card-form-element" for="check-1">
+			<input type="radio" 
+				id="check-1" 
+				name="options" />  
+			<span class="card-form-element__label">Check this box if you agree</span>
+		</label>
 	</div>
+	<div class="card-check">
+		<label class="card-form-element" for="check-2">
+			<input type="radio" 
+				id="check-2" 
+				name="options" />  
+			<span class="card-form-element__label">Check this box if you disagree</span>
+		</label>
+	</div>
+
 </fieldset>
