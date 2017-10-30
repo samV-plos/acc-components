@@ -1,32 +1,32 @@
-.acc-form-question__repeatable {
+.card-form-question__repeatable {
   margin-bottom:20px;}
   
-.acc-panel {
+.card-panel {
   padding:10px;
   background:$aperta-grey-xlight;
   border-left:10px solid $aperta-grey-xlight;}
 
-.acc-panel:hover {
+.card-panel:hover {
   background:$aperta-grey-lighter;
   border-left:10px solid $aperta-green;
   cursor: move;}
 
-.acc-panel__header .delete {
+.card-panel__header .delete {
   color:$aperta-grey;
   border:0;
   background:transparent;}
 
-.acc-panel__header .delete:hover,
-.acc-panel__header .delete:focus {
+.card-panel__header .delete:hover,
+.card-panel__header .delete:focus {
   color:$aperta-green;}
 
-.acc-button-link {
+.card-button-link {
   color:$aperta-green;}
 
-.acc-button-link .acc-is-disabled {
+.card-button-link .card-is-disabled {
   color:$aperta-grey; }
   
-.acc-button-link:hover {
+.card-button-link:hover {
   color:$aperta-green;
   font-style:underline;
   line-height:20px;}
