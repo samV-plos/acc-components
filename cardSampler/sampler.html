@@ -10,20 +10,24 @@
 
 <!-- SHORT INPUT -->
 <label class="card-form-element">
-	<span class="card-form-element--label">
+	<div class="card-form-element--label">
+		<span class="card-form-text">
 		This is the text of a custom question. Agree?
-	</span>
+		</span>
+	</div>
 	<div class="card-form-element--control">
-		<input type="text" class="card-form-element--input">
+		
+			<input type="text" class="card-form-element--input">
 	</div>
 </label>
 <!-- END SHORT INPUT -->
 
 <!-- PARAGRAPH INPUT -->
 <label class="card-form-element">
-	<span class="card-form-element--label" 
-		for="paragraph-input">Paragraph-Input Label
-	</span>
+	<div class="card-form-element--label">
+		<span class="card-form-text">Paragraph-Input Label</span>
+		<span class="required-field"><i class="fa fa-asterisk"></i></span>
+	</div>
 	<div class="card-form-element--control">
 		<textarea class="card-textarea"></textarea>
 	</div>
@@ -32,9 +36,11 @@
 
 <!-- SELECT -->
 <label class="card-form-element">
-	<span class="card-form-element--label">
+	<div class="card-form-element--label">
+		<span class="card-form-text">
 		Drop-Down Label
-	</span>
+		</span>
+	</div>
 	<div class="card-form-element--control">
 		<select class="card-select">
 			<option>Option One</option>
