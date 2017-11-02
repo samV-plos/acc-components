@@ -6,15 +6,13 @@
         {{{content.label}}}
         {{partial "required-field"}}
       </div>
-      <div class="card-form-control">
+     
       {{partial "card-content-component"}}
-      </div>
+
     </label>
   {{else}}
     <div class="card-form-element">
-      <div class="card-form-control">
         {{partial "card-content-component"}}
-      </div>
     </div>
   {{/if}}
 
@@ -24,9 +22,7 @@
       {{{content.text}}}
       {{partial "required-field"}}
     </div>
-    <div class='card-form-control">
     {{partial "card-content-component"}}
-    </div>
   </label>
 
 {{else if canBeLabeled}} {{! Label, no text}}
@@ -35,9 +31,7 @@
       {{{content.label}}}
       {{partial "required-field"}}
     </div>
-    <div class="card-form-control">
     {{partial "card-content-component"}}
-    </div>
   </label>
 
 {{else}} {{! Neither label nor text, but required}}
@@ -47,15 +41,11 @@
         This field is required.
         {{partial "required-field"}}
       </div>
-      <div class="card-form-control">
         {{partial "card-content-component"}}
-      </div>
     </label>
   {{else}}
   <div class="card-form-element">
-    <div class="card-form-control">
       {{partial "card-content-component"}}
-    </div>
   </div>
   {{/if}}
 {{/if}}
