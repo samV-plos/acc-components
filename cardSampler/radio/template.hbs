@@ -1,0 +1,53 @@
+<div class="card-radio">
+  {{#if isText}}
+    {{#each content.possibleValues as |opt index|}}
+      <label class="card-form-element">
+        {{radio-button
+          selection=answer.value
+          value=opt.value
+          disabled=disabled
+          content=content
+          action=(action "valueChanged")
+        }}
+
+        <span class="card-form-element--label">
+          {{{opt.label}}}
+        </span>
+      </label>
+    {{/each}}
+  {{else }}
+    <label class="card-form-element">
+      {{radio-button
+        selection=answer.value
+        value=true
+        disabled=disabled
+        content=content
+        action=(action "valueChanged")
+      }}
+
+      <span class="card-form-element--label">Yes</span>
+    </label>
+
+    <label class="card-form-element">
+      {{radio-button
+        selection=answer.value
+        value=false
+        disabled=disabled
+        content=content
+        action=(action "valueChanged")
+      }}
+
+      <span class="card-form-element--label">No</span>
+    </label>
+  {{/if}}
+</div>
+
+{{card-content/validation-errors hideErrors=answer.hideErrors hideErrors=answer.hideErrors errors=answer.readyIssuesArray}}
+
+{{card-content/display-children
+  content=content
+  owner=owner
+  disabled=disabled
+  repetition=repetition
+  preview=preview
+}}
