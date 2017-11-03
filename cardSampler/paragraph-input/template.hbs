@@ -1,0 +1,26 @@
+{{#if isRichText}}
+  {{rich-text-editor
+    editorStyle=content.editorStyle
+    name=content.ident
+    data-editor=content.ident
+    value=answerValue
+    hasErrors=answer.hasErrors
+    errorMessages=answer.readyIssuesArray
+    onContentsChanged=(action "valueChanged")
+    focusOut=(action "validate")
+    class=inputClassNames
+    disabled=disabled
+    hideError=hideError
+  }}
+{{else}}
+  {{textarea
+    value=(readonly answerValue)
+    class="card-input"
+    change=(action "valueChanged")
+    input=(action "valueChanged")
+    focusOut=(action "validate")
+    disabled=disabled
+  }}
+
+  {{card-content/validation-errors hideErrors=answer.hideErrors errors=answer.readyIssuesArray}}
+{{/if}}
