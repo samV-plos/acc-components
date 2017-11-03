@@ -1,0 +1,62 @@
+{{#if (or showDescription preview (not disabled))}}
+  <p class="description">
+    {{{description}}}
+  </p>
+{{/if}}
+
+{{#each attachments as |attachment|}}
+  {{#if attachment.readyIssuesArray.length}}
+    {{card-content/validation-errors errors=attachment.readyIssuesArray hideErrors=false}}
+  {{/if}}
+
+  {{attachment-item
+    accept=accept
+    attachment=attachment
+    disabled=disabled
+    filePath=filePath
+    hasCaption=hasCaption
+    allowDelete=allowDelete
+    caption=attachment.caption
+    captionChanged=(action "updateAttachmentCaption")
+    cancelUpload=(action "cancelUpload")
+    deleteFile=(action "deleteAttachment")
+    noteChanged=attrs.noteChanged
+    content=content
+    fileAdded=(action "clearError")
+    uploadError=(action "uploadError")
+    uploadFinished=attrs.updateAttachment}}
+{{/each}}
+
+{{#each fileUploads as |f|}}
+  {{upload-preview upload=f}}
+{{/each}}
+
+<div>
+  {{error-message message=uploadErrorMessage displayIcon=true indent=false}}
+</div>
+
+{{#if showAddButton}}
+  <label class="card-form-element">
+    <div class="card-form-element--label">
+      <div class="card-form-text button-secondary button--green fileinput-button {{if disableAddButton "button--disabled"}}">
+        {{{buttonText}}}
+      </div>
+    </div>
+
+    <div class="{{if uploadInProgress "hidden"}}">
+      {{file-uploader class="add-new-attachment"
+                         accept=accept
+                         uploaderId=uploaderId
+                         filePrefix=filePath
+                         multiple=multiple
+                         disabled=disableAddButton
+                         content=content
+                         addingFileFailed=(action "uploadError")
+                         progress=(action "uploadProgress")
+                         done=(action "uploadFinished")
+                         start=(action "fileAdded")}}
+    </div>
+  </label>
+{{/if}}
+
+<div>{{card-content/validation-errors errors=answer.readyIssuesArray hideErrors=false}}</div>
