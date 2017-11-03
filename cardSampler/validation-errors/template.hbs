@@ -1,0 +1,9 @@
+{{#unless hideErrors}}
+  <div class="form-element--help">
+    {{#each errors as |error|}}
+      <div class="validation-error error-message">
+        {{fa-icon "exclamation-triangle"}}{{error}}
+      </div>
+    {{/each}}
+  </div>
+{{/unless}}
