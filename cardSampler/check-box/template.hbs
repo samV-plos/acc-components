@@ -1,0 +1,30 @@
+<div class="card-checkbox">
+  <label class="card-form-element">
+    {{check-box
+      name=name
+      checked=answer.value
+      disabled=disabled
+      content=content
+      answer=answer
+      action="valueChanged"
+    }}
+
+    {{#if content.label}}
+      <span class="card-form-element--label">
+      {{{content.label}}}
+      </span>
+    {{/if}}
+
+    {{partial "required-field"}}
+  </label>
+</div>
+
+{{card-content/validation-errors errors=answer.readyIssuesArray}}
+
+{{card-content/display-children
+  content=content
+  owner=owner
+  repetition=repetition
+  disabled=disabled
+  preview=preview
+}}
